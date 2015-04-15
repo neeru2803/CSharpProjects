@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyBlog.Models
 {
-    class PostTag
+   public class PostTag
     {
         public int TagId { get; set;}
         public int PostId { get; set; }
-        public DateTime CreatedOn;
-        public DateTime ModifiedOn;
-        public String CreatedBy;
-        public String ModifiedBy;
-
+        public DateTime CreatedOn { get; set; }
+        public DateTime ModifiedOn { get; set; }
+        public String CreatedBy { get; set; }
+        public String ModifiedBy { get; set; }
     }
 }
