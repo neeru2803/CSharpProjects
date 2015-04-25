@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace MyBlog.Models
 {
-    public class Blog
+    public class Blog : BaseEntity
     {
         public int BlogId { get; set; }
         public string BlogName { get; set; }
         public string OwnerName { get; set; }
-        public DateTime CreatedOn { get; set; }
-        public DateTime ModifiedOn { get; set; }
-        public string CreatedBy { get; set; }
-        public string ModifiedBy { get; set; }
+        
     }
 }
 
