@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutomobileApp.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace AutomobileApp.Models
 
         public System.DateTime DateCreated { get; set; }
 
-        public int ProductId { get; set; }
+        public int ProductID { get; set; }
 
         public virtual Product Product { get; set; }
 
