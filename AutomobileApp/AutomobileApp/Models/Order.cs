@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace ProductsApp.Models
+namespace AutomobileApp.Models
 {
     public class Order
     {
@@ -24,6 +24,7 @@ namespace ProductsApp.Models
         [DisplayName("Last Name")]
         [StringLength(160)]
         public string LastName { get; set; }
+
 
         [Required(ErrorMessage = "Address is required")]
         [StringLength(70)]
@@ -51,8 +52,7 @@ namespace ProductsApp.Models
 
         [Required(ErrorMessage = "Email Address is required")]
         [DisplayName("Email Address")]
-        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}",
-            ErrorMessage = "Email is is not valid.")]
+        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", ErrorMessage = "Email is is not valid.")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
@@ -66,5 +66,8 @@ namespace ProductsApp.Models
         public bool HasBeenShipped { get; set; }
 
         public List<OrderDetail> OrderDetails { get; set; }
+
     }
 }
+        
+        

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace ProductsApp.Models
+namespace AutomobileApp.Models
 {
     public class Product
     {
